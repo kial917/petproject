@@ -1,0 +1,106 @@
+/* Шаг 3 Селектор Типа */
+
+h2 {
+    text-decoration: underline red;
+}
+
+/* Шаг 4 Селектор класс */
+
+.description {
+    text-transform: unset;
+    word-spacing: 10px;
+    color: rgb(39, 21, 87);
+}
+
+/* Шаг 5 Применение нескольких классов на элементе */
+
+.emphasized-description {
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+    color: chartreuse;
+}
+
+/* Шаг 6 Id */
+
+#thought {
+    padding: 5px;
+    border: 1px dotted red;
+    display: inline-block;
+    margin: 5px auto 0px;
+}
+
+/* Шаг 7 Обозначение согласно правилам */
+
+#block002-notice {
+    font-size: 8px;
+    font-weight: 100;
+    text-align: left;
+    display: inline-block;
+    font-style: italic;
+}
+
+/* Шаг 8 Селектор потомков */
+
+#idea.description span {
+    background-color: blue;
+    display: inline;
+    border-radius: 10px;
+    overflow: hidden;
+    color: yellow;
+}
+
+#mistake {
+    color: red;
+}
+
+/* Шаг 9 Дочерние элементы */
+
+.menu>li a {
+    height: 80px;
+    width: 80px;
+    border: 3px double blue;
+    text-decoration: none;
+}
+
+/* Шаг 10 Сестринские элементы */
+
+.sister-input+input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid yellow;
+}
+
+h3+.description {
+    text-transform: uppercase
+}
+
+/* Шаг 11 Общий селектор для элемента, который находится на одном и том же уровне */
+
+.sister-input~input {
+    color: saddlebrown;
+}
+
+/* Шаг 12 Группирующий селектор */
+
+h2, h3 {
+    letter-spacing: 3px;
+}
+
+/* Шаг 13 Селектор атрибутов */
+
+input[type="button"] {
+    background-color: salmon;
+    color: rgb(39, 21, 87);
+    border-radius: 5px;
+    width: auto;
+    height: 50px;
+}
+.button[type="textarea"]{
+    width: auto;
+    height: 50px;
+    background-color: silver;
+}
+
+/* Шаг 15 Применение * */
+* {
+    font-family:Arial, Helvetica, sans-serif
+}
