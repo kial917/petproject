@@ -78,6 +78,9 @@ h3+.description {
 .sister-input~input {
     color: saddlebrown;
 }
+h2~.description{
+    color:orangered;
+}
 
 /* Шаг 12 Группирующий селектор */
 

@@ -1,0 +1,133 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.block001 {
+    background-color: rgb(241, 227, 227);
+    text-align: center;
+    min-width: 300px;
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    align-items: center;
+}
+
+.block001__buttons {
+    display: flex;
+    justify-content: space-around;
+    background-color: pink;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto 30px;
+}
+
+.block002__links {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+/* Шаг 17 Стилизация с помощью псевдоклассов тэгов кнопок и ссылок */
+
+a:hover {
+    color: #ffe;
+    background-color: #5488af;
+}
+
+
+
+a:active {
+    color: lime;
+}
+
+/* непонятно почему несмотря на то, что по ссылке не было было перехода к ней применяется стиль посещенной */
+
+/* a:visited {
+    color: purple;
+  } */
+
+button:hover, button:visited:hover {
+    color: #FFF;
+    background-color: #76AEED;
+    /* Light blue */
+}
+
+button:active, button:visited {
+    background-color: rgb(77, 67, 67);
+    color: chartreuse;
+}
+
+/* Шаг 18 Псевдокласс hover применен */
+
+/* Шаг 19 П с е в д о к л а с с ы 
+:la s t- o f-t y p e, 
+:fir s t- o f-t y p e, 
+:fir s t- c hild, 
+:la s t- c hild, 
+:n t h - c hild */
+
+.block003>div p {
+    border: 1px solid grey;
+}
+
+.block003>div p:nth-child(2n) {
+    background-color: rgb(224, 211, 211);
+}
+
+.block003>div p:last-of-type {
+    background-color: lightseagreen;
+}
+
+.block003>div p:first-of-type {
+    background-color: greenyellow;
+}
+
+.block003__parag>span:last-child {
+    color: yellow;
+}
+
+.block001__buttons>:last-child {
+    font-size: 20px;
+}
+
+.block001__buttons>:first-child {
+    font-size: 20px;
+}
+
+/* Шаг 20 Псевдокласс :not */
+
+.block003__parag p:not(#block003__parag__four) {
+    text-align: right;
+}
+/* Шаг 21 Псевдокласс ::before ::after*/
+
+.block003__parag p::before {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Circle-icons-camera.svg");
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+a:hover::after {
+    content: '';
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Face-smile.svg/1200px-Face-smile.svg.png");
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+    background-position: center;
+    vertical-align: bottom;
+    left: 20px;
+    position: relative;
+}
