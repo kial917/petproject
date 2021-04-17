@@ -78,8 +78,9 @@ h3+.description {
 .sister-input~input {
     color: saddlebrown;
 }
-h2~.description{
-    color:orangered;
+
+h2~.description {
+    color: orangered;
 }
 
 /* Шаг 12 Группирующий селектор */
@@ -97,13 +98,15 @@ input[type="button"] {
     width: auto;
     height: 50px;
 }
-.button[type="textarea"]{
+
+.button[type="textarea"] {
     width: auto;
     height: 50px;
     background-color: silver;
 }
 
 /* Шаг 15 Применение * */
+
 * {
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif
 }

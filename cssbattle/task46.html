@@ -1,0 +1,54 @@
+<div class="cirle">
+    <div class="smalltriagle"></div>
+    <div class="bigtriagle"></div>
+
+</div>
+
+
+<style>
+    body {
+        background-color: #293462;
+    }
+
+    .cirle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #FFF1C1;
+        ;
+        position: relative;
+        top: 42px;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+
+    }
+
+    .bigtriagle {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        bottom: 0px;
+        margin: 0 auto;
+        padding: 0;
+        z-index: 0;
+        border-left: 141px solid transparent;
+        border-right: 141px solid transparent;
+        border-bottom: 141px solid #FE5F55;
+
+    }
+
+    .smalltriagle {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        bottom: -70px;
+        margin: 0 auto;
+        padding: 0;
+        z-index: 1;
+        border-left: 141px solid transparent;
+        border-right: 141px solid transparent;
+        border-bottom: 141px solid #FE5F55;
+        right: 30px;
+    }
+</style>

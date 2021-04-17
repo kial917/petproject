@@ -45,8 +45,6 @@ a:hover {
     background-color: #5488af;
 }
 
-
-
 a:active {
     color: lime;
 }
@@ -110,6 +108,7 @@ button:active, button:visited {
 .block003__parag p:not(#block003__parag__four) {
     text-align: right;
 }
+
 /* Шаг 21 Псевдокласс ::before ::after*/
 
 .block003__parag p::before {
