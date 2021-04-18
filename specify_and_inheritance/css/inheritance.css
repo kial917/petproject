@@ -1,0 +1,62 @@
+/* Шаг 1. Наследование свойств от родителя */
+body{
+    font-size: 9px;
+}
+/* Тэг p приобрел размер шрифта 9px, h1 же измеряется в rem от данного размера */
+
+/* Шаг 2. Ненаследуемые свойства. */
+body{
+    border: 1px solid #000;
+}
+/* Все что касается внешнего оформления компонента не наследуюется дочерними элементами  */
+
+/* Шаг 3. Применение inherit */
+body{
+    border: 1px solid rgb(204, 43, 43);;
+    text-align: right;
+}
+
+.second_parag{
+    border: 1px solid black;
+    
+    
+}
+.second_parag>p{
+    border: inherit;
+}
+/* Шаг 4. Применение unset, initial */
+
+#third_line{
+    border: unset;
+}
+/* Для третьего элемента p id=third_line применен сброс значения border */
+#four_line{
+    text-align: initial;
+}
+/* Для четвертого элемента p id=four_line применен сброс до значения по умолчанию */
+/* Шаг 5. Прочел статью по ссылке. */
+/* Шаг 6. Примеры на специфичность.  */
+/* Скопирован код из примера в html строки 41-48, ввел конкурирующие свойства font color */
+#pagewrapper{
+    color:blue;
+}
+div .content,.secondary p {
+    color:pink;
+}
+#second{
+    color: red;
+}
+/* каждое новое правило из правил перетирает старое, исходя из более приоритетной специфичности */
+
+#four_parag{
+    color: purple;
+}
+.four{
+    color: springgreen !important;
+}
+ /* div div p {
+    color: black !important;
+ }   */
+ 
+/* Данное правило перезатрет все предыдущие 
+так как обращено к непосреденно к элементам и имеет свойство important  */
